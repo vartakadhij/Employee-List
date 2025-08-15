@@ -6,11 +6,11 @@ export const renderEmployeeCard = (employee) => {
     let employeeCard = document.createElement("div");
     employeeCard.innerHTML = `
         <div class="employee-image">
-            <img src=${employee.imageUrl} alt="" />
+            <img src="${employee.imageUrl}" alt="${employee.firstName} ${employee.lastName}" />
         </div>
         <p id="emp-${employee.id}">${employee.firstName} ${employee.lastName}</p>
         <p>${employee.company}</p>
-    `
+    `;
     employeeCard.className = "employee-card";
 
     // employeeCard
